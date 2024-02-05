@@ -1,0 +1,54 @@
+CRITICAL - 2023-12-11 11:19:03 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\View\View.php on line 227.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-11 12:18:54 --> Undefined variable $mostrar
+in APPPATH\Views\mostrar.php on line 22.
+ 1 APPPATH\Views\mostrar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mostrar', [], true)
+ 5 APPPATH\Controllers\Excluir.php(14): view('mostrar')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 12:55:12 --> Undefined variable $modelo
+in APPPATH\Controllers\Infor.php on line 27.
+ 1 APPPATH\Controllers\Infor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelo', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Infor.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 13:17:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Infor.php(41): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 13:24:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 12.
+ 1 APPPATH\Views\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Infor.php(41): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 13:28:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Infor.php(41): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

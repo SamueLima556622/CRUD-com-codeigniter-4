@@ -1,0 +1,94 @@
+CRITICAL - 2024-02-03 01:17:42 --> Undefined array key "id"
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Infor.php(41): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->Info()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-03 01:18:23 --> Undefined array key "id"
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Infor.php(41): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->Info()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-03 17:26:57 --> Maximum execution time of 30 seconds exceeded
+in APPPATH\Config\Filters.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 17:27:19 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 86.
+ 1 APPPATH\Views\pagina1.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(8): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-03 17:28:30 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 86.
+ 1 APPPATH\Views\pagina1.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(8): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-03 17:40:53 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 17:51:45 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 17:58:23 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 17:59:44 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 18:01:41 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 18:03:31 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 18:04:24 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 22:27:32 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Validation\FormatRules.php on line 351.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 22:59:08 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 23:20:44 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Debug\Toolbar.php on line 476.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-03 23:41:59 --> Undefined variable $mostrar
+in APPPATH\Views\mostrar.php on line 95.
+ 1 APPPATH\Views\mostrar.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php', 95)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mostrar', [], true)
+ 5 APPPATH\Controllers\Infor.php(52): view('mostrar')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->ExcluirInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-03 23:50:55 --> syntax error, unexpected variable "$routes"
+in APPPATH\Config\Routes.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

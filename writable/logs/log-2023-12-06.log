@@ -1,0 +1,212 @@
+CRITICAL - 2023-12-06 11:00:18 --> Class "App\Controllers\Modelo" not found
+in APPPATH\Controllers\Infor.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:09:05 --> Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\Infor.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Infor.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Infor')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Infor')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Infor', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:09:30 --> Class "App\Models\Modelo" not found
+in APPPATH\Controllers\Infor.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 11:18:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'teste' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'teste', 3306, '', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\framework-4.4.3\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Infor.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+#10 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'teste' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#3 C:\xampp\htdocs\framework-4.4.3\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\framework-4.4.3\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Infor.php(21): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 11:18:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'teste'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pessoas` (`nome`, `sobrenome`, `email`, `fone`) VALUES (:nome:, :sobrenome:, :email:, :fone:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Infor.php(21): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 11:26:31 --> mysqli_sql_exception: Unknown column 'fone' in 'field list' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\framework-4.4.3\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Infor.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+#10 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-06 11:26:31 --> Unknown column 'fone' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pessoas` (`nome`, `sobrenome`, `email`, `fone`) VALUES (:nome:, :sobrenome:, :email:, :fone:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Infor.php(21): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:36:13 --> Undefined variable $dados
+in APPPATH\Views\pagina1.php on line 31.
+ 1 APPPATH\Views\pagina1.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dados', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 31)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:40:30 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\pagina1.php on line 37.
+ 1 APPPATH\Views\pagina1.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 37)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:41:17 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\pagina1.php on line 37.
+ 1 APPPATH\Views\pagina1.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 37)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:50:53 --> Undefined variable $item
+in APPPATH\Views\pagina1.php on line 39.
+ 1 APPPATH\Views\pagina1.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:51:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\pagina1.php on line 39.
+ 1 APPPATH\Views\pagina1.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:52:16 --> Undefined variable $dados1
+in APPPATH\Views\pagina1.php on line 2.
+ 1 APPPATH\Views\pagina1.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dados1', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 23:30:55 --> Undefined variable $dados1
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dados1', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(25): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 23:49:47 --> Undefined variable $dados1
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dados1', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(23): view('pagina1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 23:51:45 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(23): view('pagina1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 23:55:58 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 23:56:28 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

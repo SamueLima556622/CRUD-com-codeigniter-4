@@ -1,0 +1,395 @@
+CRITICAL - 2023-12-08 13:11:38 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\ThirdParty\Kint\Parser\JsonPlugin.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-12-08 13:14:16 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'crud', 3306, '', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\framework-4.4.3\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Infor.php(20): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+#10 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#3 C:\xampp\htdocs\framework-4.4.3\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\framework-4.4.3\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Infor.php(20): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-08 13:14:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pessoas` (`nome`, `sobrenome`, `email`) VALUES (:nome:, :sobrenome:, :email:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Infor.php(20): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:16:41 --> Too few arguments to function App\Controllers\Editar::EditarInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Editar.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:33:18 --> Undefined array key "id_pessoas"
+in APPPATH\Views\mostrar.php on line 22.
+ 1 APPPATH\Views\mostrar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pessoas"', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mostrar', [], true)
+ 5 APPPATH\Controllers\Mostrar.php(11): view('mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Mostrar->MostrarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mostrar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:05:11 --> Undefined variable $id_pessoa
+in APPPATH\Views\mostrar.php on line 28.
+ 1 APPPATH\Views\mostrar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pessoa', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mostrar', [], true)
+ 5 APPPATH\Controllers\Mostrar.php(11): view('mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Mostrar->MostrarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mostrar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:17:21 --> Too few arguments to function App\Controllers\Editar::EditarInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Editar.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:49:03 --> Class "App\Model\Salvar" not found
+in APPPATH\Controllers\Excluir.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:49:30 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Excluir.php(10): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-08 14:49:48 --> mysqli_sql_exception: Unknown column 'pessoas.id' in 'where clause' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '')
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('')
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-08 14:49:48 --> Unknown column 'pessoas.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pessoas`
+WHERE `pessoas`.`id` = :pessoas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '')
+ 4 APPPATH\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-08 14:50:53 --> mysqli_sql_exception: Unknown column 'pessoas.id' in 'where clause' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '')
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('')
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-08 14:50:53 --> Unknown column 'pessoas.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pessoas`
+WHERE `pessoas`.`id` = :pessoas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '')
+ 4 APPPATH\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-08 14:51:05 --> mysqli_sql_exception: Unknown column 'pessoas.id' in 'where clause' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '')
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('')
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-08 14:51:05 --> Unknown column 'pessoas.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pessoas`
+WHERE `pessoas`.`id` = :pessoas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '')
+ 4 APPPATH\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:57:58 --> Undefined variable $data
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 15:01:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 17:55:53 --> Maximum execution time of 30 seconds exceeded
+in SYSTEMPATH\Autoloader\Autoloader.php on line 311.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-08 17:56:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 17:59:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 12.
+ 1 APPPATH\Views\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 17:59:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 12.
+ 1 APPPATH\Views\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:01:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [...], true)
+ 5 APPPATH\Controllers\Editar.php(12): view('editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:01:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [...], true)
+ 5 APPPATH\Controllers\Editar.php(12): view('editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:02:08 --> Undefined variable $mudar
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mudar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [...], true)
+ 5 APPPATH\Controllers\Editar.php(12): view('editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:03:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:04:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:10:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:10:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(11): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:28:52 --> Undefined variable $id
+in APPPATH\Controllers\Excluir.php on line 9.
+ 1 APPPATH\Controllers\Excluir.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Excluir.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:29:09 --> Too few arguments to function App\Controllers\Excluir::ExcluirInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Excluir.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:30:40 --> Too few arguments to function App\Controllers\Excluir::ExcluirInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Excluir.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:30:50 --> Too few arguments to function App\Controllers\Excluir::ExcluirInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Excluir.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:46:27 --> Undefined array key "id"
+in APPPATH\Views\editar.php on line 10.
+ 1 APPPATH\Views\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(12): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:47:13 --> Undefined array key "nome"
+in APPPATH\Views\editar.php on line 12.
+ 1 APPPATH\Views\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(12): view('editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo('')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:49:50 --> Call to undefined method App\Models\Salvar::deleteAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Excluir.php(10): CodeIgniter\Model->__call('deleteAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:50:05 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Excluir.php(10): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 19:02:00 --> Object of class App\Models\Salvar could not be converted to string
+in APPPATH\Controllers\Excluir.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 19:06:30 --> Object of class App\Models\Salvar could not be converted to string
+in APPPATH\Controllers\Excluir.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 19:13:37 --> Call to a member function delete() on null
+in APPPATH\Controllers\Excluir.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 19:31:59 --> Call to a member function delete() on null
+in APPPATH\Controllers\Excluir.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Excluir->ExcluirInfo('')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excluir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

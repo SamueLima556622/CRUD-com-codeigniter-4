@@ -1,0 +1,208 @@
+CRITICAL - 2023-12-07 00:01:30 --> Array to string conversion
+in APPPATH\Controllers\Infor.php on line 23.
+ 1 APPPATH\Controllers\Infor.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Infor.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:03:23 --> Array to string conversion
+in APPPATH\Controllers\Infor.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Infor.php', 23)
+ 2 APPPATH\Controllers\Infor.php(23): implode(', ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:04:27 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\xampp\\htdocs\\framework-4.4.3\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\xampp\\htdocs\\framework-4.4.3\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:09:41 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(23): view('pagina1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:13:48 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Infor.php(23): view('pagina1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Infor->PegarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Infor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:13:57 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:25:08 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 00:25:15 --> Undefined variable $mostrar
+in APPPATH\Views\pagina1.php on line 32.
+ 1 APPPATH\Views\pagina1.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\pagina1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagina1', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('pagina1')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 11:04:34 --> Undefined variable $mostrar
+in APPPATH\Views\mostrar.php on line 19.
+ 1 APPPATH\Views\mostrar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mostrar', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Views\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mostrar', [], true)
+ 5 APPPATH\Controllers\Mostrar.php(10): view('mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Mostrar->MostrarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mostrar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:11:23 --> Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\Editar.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Editar.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Editar')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Editar')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Editar', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:13:31 --> Class "use\Models\Salvar" not found
+in APPPATH\Controllers\Editar.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:14:00 --> Undefined variable $id
+in APPPATH\Controllers\Editar.php on line 10.
+ 1 APPPATH\Controllers\Editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\framework-4.4.3\\app\\Controllers\\Editar.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:14:40 --> mysqli_sql_exception: Unknown column 'pessoas.id' in 'where clause' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, 'id')
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('id')
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 13:14:40 --> Unknown column 'pessoas.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pessoas`
+WHERE `pessoas`.`id` = :pessoas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, 'id')
+ 4 APPPATH\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('id')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:18:29 --> mysqli_sql_exception: Unknown column 'pessoas.id' in 'where clause' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, 'id_pessoa')
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('id_pessoa')
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 13:18:29 --> Unknown column 'pessoas.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pessoas`
+WHERE `pessoas`.`id` = :pessoas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, 'id_pessoa')
+ 4 APPPATH\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('id_pessoa')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:18:44 --> mysqli_sql_exception: Unknown column 'pessoas.id' in 'where clause' in C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\framework-4.4.3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\framework-4.4.3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\framework-4.4.3\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\framework-4.4.3\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, 'id_pessoa')
+#6 C:\xampp\htdocs\framework-4.4.3\app\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('id_pessoa')
+#7 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+#8 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#9 C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\framework-4.4.3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 13:18:44 --> Unknown column 'pessoas.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pessoas`
+WHERE `pessoas`.`id` = :pessoas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, 'id_pessoa')
+ 4 APPPATH\Controllers\Editar.php(10): CodeIgniter\BaseModel->find('id_pessoa')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:20:42 --> Too few arguments to function App\Controllers\Editar::EditarInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Editar.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:22:14 --> Too few arguments to function App\Controllers\Editar::EditarInfo(), 0 passed in C:\xampp\htdocs\framework-4.4.3\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Editar.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editar->EditarInfo()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
